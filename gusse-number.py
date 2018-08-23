@@ -4,15 +4,19 @@ Created on Wed Aug  8 14:39:12 2018
 
 @author: windows7
 """
+import random
+print ("猜0-20之间的整数")
 
-number=7
-guess=-1
-while guess!=number:
-    guess=int(input("请输入猜测数字："))
-    if guess==number:
-        print("这么厉害的么？")
-    elif guess>number:
+x=random.randint(0,20)#(最小值，最大值)
+count=0
+while 1:  
+    count+=1
+    number=int(input("请输入数字："))
+    if number==x:
+        print("猜对啦！一共猜了",count,"次哦")
+        print("游戏结束！")
+        break
+    elif number>x:
         print("猜大了")      
-    elif guess<number:
+    elif number<x:
         print("猜小了")
-        
