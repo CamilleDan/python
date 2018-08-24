@@ -16,7 +16,7 @@ while 1:
     if number==x:
         if count==1:
             print("逆天！一次猜中！")
-        elif 1<count<=3:
+        elif 1<count<=5:
             print(count,"次就猜中了，佩服佩服")
         else:
             print("一共猜了",count,"次哦！")
