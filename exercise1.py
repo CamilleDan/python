@@ -133,7 +133,7 @@ print(x[0])
 print(x[0][1])
 print(x[1][0])
 
-
+#迭代
 import sys         # 引入 sys 模块
  
 list=[1,2,3,4]
@@ -144,3 +144,38 @@ while True:
         print (next(it))
     except StopIteration:
         sys.exit()
+ 
+#define function
+def hello():
+    print ("hello,world")
+hello()          
+
+# computr area
+def area(w,h):
+    return w*h
+def welcome(name):
+    print("welcome",name)
+
+w=3
+h=4
+welcome("dan")
+print ("w=",w,"h=",h,"area=",area(w,h))
+
+#date and time
+import calendar
+
+cal = calendar.month(2018,9)
+print ("以下输出2018年9月份的日历:")
+print (cal)
+#random package
+import random
+random.choice(['apple', 'pear', 'banana'])
+random.sample(range(100), 10)   # sampling without replacement
+random.random()    # random float
+random.randrange(6)    # random integer chosen from range(6)
+
+import math
+math.cos(math.pi/2)
+math.log(1024, 2)
+
+
