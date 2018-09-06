@@ -68,11 +68,9 @@ else:
     print("ice is not here")
 
 #dictinary
-dic={}
-dic={'one':'dan','two':'qiao','three':'li'}
-print(dic)
-print(dic.keys())
-print(dic['three'])
+dict={'name':'yangdan','age':'22','school':'scau'}
+dict['name']
+str(dict)
 
 #print ("hello,world")
 if True:
